@@ -39,6 +39,8 @@ describe('🗡 Actor', () => {
     // win
     // lost
   })
+
+  test.skip(`[Monster → Stats]   : Monster level can be different each hour.`, () => {})
 })
 
 describe('⚔️ Battle', () => {
