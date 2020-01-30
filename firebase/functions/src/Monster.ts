@@ -1,13 +1,13 @@
-import { INonPlayableStats } from './Stats'
+import { IMonsterStats } from './Stats'
 
 export default class Monster implements IMonster {
-  stats: INonPlayableStats
+  stats: IMonsterStats
 
-  constructor(stats: INonPlayableStats) {
+  constructor(stats: IMonsterStats) {
     this.stats = stats
   }
 }
 
 export interface IMonster {
-  stats: INonPlayableStats
+  stats: IMonsterStats
 }

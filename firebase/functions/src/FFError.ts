@@ -11,4 +11,4 @@ export default class FFError extends Error implements IFFError {
   }
 }
 
-export const INSUFFICIENT_AP = new FFError('AP0', 'Not enough AP')
+export const ERROR_INSUFFICIENT_AP = new FFError('AP0', 'Not enough AP')

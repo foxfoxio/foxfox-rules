@@ -1,4 +1,4 @@
-export class PlayableStats implements IPlayableStats {
+export class HeroStats implements IHeroStats {
   ap = 0
 
   constructor(ap: number = 0) {
@@ -6,11 +6,11 @@ export class PlayableStats implements IPlayableStats {
   }
 }
 
-export interface IPlayableStats {
+export interface IHeroStats {
   ap: number
 }
 
-export class NonPlayableStats implements INonPlayableStats {
+export class MonsterStats implements IMonsterStats {
   req_ap = 0
 
   constructor(req_ap: number = 0) {
@@ -18,7 +18,7 @@ export class NonPlayableStats implements INonPlayableStats {
   }
 }
 
-export interface INonPlayableStats {
+export interface IMonsterStats {
   /*
    * Required action point
    */
