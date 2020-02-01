@@ -21,7 +21,7 @@ npm i
 npm start
 ```
 
-## To create quest
+## To create quest (think it's a folder)
 
 - Capture picture from https://sketchfab.com/3d-models/low-poly-dungeon-game-5afb00f6cda34980a058853a980d3c7d
 - Save as `png` with https://pngquant.org/
@@ -42,13 +42,16 @@ npm start
 }
 ```
 
-## To create quiz
+## To create quiz (think it's a file)
 
-- Fill all stats
+- Select quest
+- Select slot index
+- Fill all quiz prerequisites scheme
 
 ```
 // monster write
 {
+  "index": 0,
   "type": "metalon",
   "tags": ["ds:10", "de:10"],
   "referral": "https://developers.google.com/machine-learning/crash-course/reducing-loss/check-your-understanding",
@@ -78,6 +81,6 @@ quest {
 - Run unit-test before add to `firebase`
 - Run https://pngquant.org/ to optimize image
 - Trigger `firebase` cli for writing to `firestore`
-- Run integration test via `firestore`
+- Run `play` test via `firestore` (all win, all lost, all random)
 - Generate release note
 - Make PR to `foxfox-play` for blue/green deployment
